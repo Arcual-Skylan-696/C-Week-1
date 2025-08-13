@@ -1,13 +1,13 @@
 using System;
 
-class program
+class Program
 {
     static void Main()
     {
         int age = 32;
         double income = 56,000;
 
-        if (age > 25 && age < = 35 && income > 50000)
+        if (age > 25 && age <= 35 && income > 50000)
         {
             Console.WriteLine("Category: Young Professional");
         }
@@ -25,4 +25,5 @@ class program
         }
 
     }
+
 }
