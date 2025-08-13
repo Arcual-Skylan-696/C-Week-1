@@ -5,13 +5,13 @@ class Program
     static void Main()
     {
         int age = 32;
-        double income = 56,000;
+        double income = 56000;
 
         if (age > 25 && age <= 35 && income > 50000)
         {
             Console.WriteLine("Category: Young Professional");
         }
-        else if (age > = 36 && age <= 55 && income > 70000)
+        else if (age >= 36 && age <= 55 && income > 70000)
         {
             Console.WriteLine("Category: Middle-aged Professional");           
         }
@@ -27,3 +27,4 @@ class Program
     }
 
 }
+
