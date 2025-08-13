@@ -5,26 +5,30 @@ class Program
     static void Main()
     {
         const double PI = 3.1416;
-        double radius;
-        char choice;
+        double r;
+        char ch;
 
         Console.Write("Enter radius: ");
-        radius = double.Parse(Console.ReadLine());
+        r = double.Parse(Console.ReadLine());
 
-        Console.Write("Enter choice (A=Area, P=Perimeter, X=Exit): ");
-        choice = char.ToUpper(Console.ReadKey().KeyChar);
+        Console.Write("Enter choice (A = Area, P = Perimeter, X = Exit): ");
+        ch = char.ToUpper(Console.ReadKey().KeyChar);
 
-        switch (choice)
+        Console.WriteLine();  
+        switch (ch)
         {
             case 'A':
-                Console.WriteLine("Area = " + (PI * radius * radius));
+                Console.WriteLine("Area = " + (PI * r * r));
                 break;
+
             case 'P':
-                Console.WriteLine("Perimeter = " + (2 * PI * radius));
+                Console.WriteLine("Perimeter = " + (2 * PI * r));
                 break;
+
             case 'X':
                 Console.WriteLine("Exiting program...");
                 break;
+
             default:
                 Console.WriteLine("Invalid choice");
                 break;
