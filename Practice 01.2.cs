@@ -2,14 +2,11 @@ using System;
 
 int number = -3;
 
-if( number > 0)
+if (number > 0)
 {
-    Console.WriteLine($" the number {number} is positive. ");
+    Console.WriteLine($"The number {number} is positive.");
 }
 else
 {
-    Console.WriteLine($" the number {number} is negative. ")
+    Console.WriteLine($"The number {number} is negative.");
 }
-
-
-
